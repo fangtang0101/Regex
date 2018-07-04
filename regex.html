@@ -119,6 +119,14 @@
 	// http://www.lvyestudy.com/regex/regex_1.15.aspx  总结一文
 
 
+	var url = 'www.baidu.com';  
+	var reg = /^.*?\./;				// ^ 表示开头位置  . 表示任意字符   * 某个字符 出现任意多次， ？ 代表最多一次(^.* 最多一次)
+	                                    // (/.*?\./g)   (/.*?\./)  可以尝试下 有什么不同
+	url = url.replace(reg, 'fang.');
+	console.log('new url ...',url);
+
+
+
 
 
 
